@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assignments on MIT OpenCourseWare</title>
+    <link>/resources/assignments/</link>
+    <description>Recent content in Assignments on MIT OpenCourseWare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/resources/assignments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>al1.pdf</title>
+      <link>/resources/al1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al1/data.json</guid>
+      <description>Problem set.</description>
+    </item>
+    
+    <item>
+      <title>al1.ps</title>
+      <link>/resources/al1-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al1-1/data.json</guid>
+      <description>Problem set in PS format.</description>
+    </item>
+    
+    <item>
+      <title>al1.tex</title>
+      <link>/resources/al1-12/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al1-12/data.json</guid>
+      <description>Problem set in TEX format.</description>
+    </item>
+    
+    <item>
+      <title>al2.pdf</title>
+      <link>/resources/al2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al2/data.json</guid>
+      <description>Problem set.</description>
+    </item>
+    
+    <item>
+      <title>al2.ps</title>
+      <link>/resources/al2-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al2-1/data.json</guid>
+      <description>Problem set in PS format.</description>
+    </item>
+    
+    <item>
+      <title>al2.tex</title>
+      <link>/resources/al2-12/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al2-12/data.json</guid>
+      <description>Problem set in TEX format.</description>
+    </item>
+    
+    <item>
+      <title>al3.pdf</title>
+      <link>/resources/al3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al3/data.json</guid>
+      <description>Problem set.</description>
+    </item>
+    
+    <item>
+      <title>al3.ps</title>
+      <link>/resources/al3-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al3-1/data.json</guid>
+      <description>Problem set in PS format.</description>
+    </item>
+    
+    <item>
+      <title>al3.tex</title>
+      <link>/resources/al32/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al32/data.json</guid>
+      <description>Problem set in TEX format.</description>
+    </item>
+    
+    <item>
+      <title>al4.pdf</title>
+      <link>/resources/al4-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al4-1/data.json</guid>
+      <description>Problem set.</description>
+    </item>
+    
+    <item>
+      <title>al4.ps</title>
+      <link>/resources/al4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al4/data.json</guid>
+      <description>Problem set in PS format.</description>
+    </item>
+    
+    <item>
+      <title>al4.tex</title>
+      <link>/resources/al4-2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/al4-2/data.json</guid>
+      <description>Problem set in TEX format.</description>
+    </item>
+    
+    <item>
+      <title>Assignments</title>
+      <link>/pages/assignments/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/assignments/data.json</guid>
+      <description>Below are the homework assignments in three formats (.tex, .ps, and .pdf). The solutions are courtesy Juha Valkama, a student in the class, and are provided in two formats (.tex and .pdf). Used with permission. The week numbers referred to in the table are due dates for the final version of the homework assignments.
+WEEK # ASSIGNMENTS SOLUTIONS 3 Homework #1 (TEX) (PS) (PDF) (TEX) (PDF) 4 Homework #2 (TEX) (PS) (PDF) (TEX) (PDF) 6 Homework #3 (TEX) (PS) (PDF) (TEX) (PDF) 7 Homework #4 (TEX) (PS) (PDF) (TEX) (PDF) </description>
+    </item>
+    
+    <item>
+      <title>hw1.pdf</title>
+      <link>/resources/hw1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/hw1/data.json</guid>
+      <description>Problem set solutions are courtesy of Juha Valkama, a student in the class.</description>
+    </item>
+    
+    <item>
+      <title>hw1.tex</title>
+      <link>/resources/hw12/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/hw12/data.json</guid>
+      <description>Problem set solutions in TEX format. The solutions are courtesy of Juha Valkama, a student in the class.</description>
+    </item>
+    
+    <item>
+      <title>hw2.pdf</title>
+      <link>/resources/hw2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/hw2/data.json</guid>
+      <description>Problem set solutions are courtesy of Juha Valkama, a student in the class.</description>
+    </item>
+    
+    <item>
+      <title>hw2.tex</title>
+      <link>/resources/hw22/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/hw22/data.json</guid>
+      <description>Problem set solutions in TEX format. The solutions are courtesy of Juha Valkama, a student in the class.</description>
+    </item>
+    
+    <item>
+      <title>hw3.pdf</title>
+      <link>/resources/hw3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/hw3/data.json</guid>
+      <description>Problem set solutions are courtesy of Juha Valkama, a student in the class.</description>
+    </item>
+    
+    <item>
+      <title>hw3.tex</title>
+      <link>/resources/hw3-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/hw3-1/data.json</guid>
+      <description>Problem set solutions in TEX format. The solutions are courtesy of Juha Valkama, a student in the class.</description>
+    </item>
+    
+    <item>
+      <title>hw4.pdf</title>
+      <link>/resources/hw4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/hw4/data.json</guid>
+      <description>Problem set solutions are courtesy of Juha Valkama, a student in the class.</description>
+    </item>
+    
+    <item>
+      <title>hw4.tex</title>
+      <link>/resources/hw42/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/hw42/data.json</guid>
+      <description>Problem set solutions in TEX format. The solutions are courtesy of Juha Valkama, a student in the class.</description>
+    </item>
+    
+  </channel>
+</rss>

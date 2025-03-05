@@ -1,0 +1,28 @@
+{
+  "course_title":"Linear Algebra - Communications Intensive",
+  "course_description":"This is a communication intensive supplement to Linear Algebra ([18.06](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/)). The main emphasis is on the methods of creating rigorous and elegant proofs and presenting them clearly in writing. The course starts with the standard linear algebra syllabus and eventually develops the techniques to approach a more advanced topic: abstract root systems in a Euclidean space.",
+  "course_description_html":"This is a communication intensive supplement to Linear Algebra (<a href=\"https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/\" target=\"_blank\" rel=\"noopener\">18.06</a>). The main emphasis is on the methods of creating rigorous and elegant proofs and presenting them clearly in writing. The course starts with the standard linear algebra syllabus and eventually develops the techniques to approach a more advanced topic: abstract root systems in a Euclidean space.",
+  "site_uid":"dfbb9e00-0f50-48ec-b8e2-6692859df2e4",
+  "legacy_uid":"b0ed7caf-cf5f-34d1-efca-7465ff367956","instructors": [{
+    "first_name":"Andrew",
+    "last_name":"Brooke-Taylor",
+    "middle_initial":"",
+    "salutation":"",
+    "title":"Andrew Brooke-Taylor"},{
+    "first_name":"Anna",
+    "last_name":"Lachowska",
+    "middle_initial":"",
+    "salutation":"Dr.",
+    "title":"Dr. Anna Lachowska"}],"department_numbers":["18"],
+  "learning_resource_types":["Projects with Examples","Problem Sets with Solutions"],
+  "topics":[["Mathematics","Linear Algebra"],["Humanities","Literature","Academic Writing"]],
+  "mit_learn_topics":null,
+  "primary_course_number":"18.06CI",
+  "extra_course_numbers":"",
+  "term":"Spring",
+  "year":"2004",
+  "level":["Undergraduate"],
+  "hide_download":false,
+  "image_src":"./static_resources/e507be1055075a082b2dea012b3cce5e_18-06cis04.jpg",
+  "course_image_metadata":{"content_type":"resource","description":"The root system G_2 with dominant Weyl chamber shown. (Image courtesy of Juha Valkama.)","draft":false,"file":"/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/e507be1055075a082b2dea012b3cce5e_18-06cis04.jpg","file_size":51332,"file_type":"image/jpeg","image_metadata":{"caption":"The root system G\\_2 with dominant Weyl chamber shown. (Image courtesy of Juha Valkama.)","credit":"","image-alt":"Graph of  the root system G_2."},"iscjklanguage":false,"learning_resource_types":[],"license":"https://creativecommons.org/licenses/by-nc-sa/4.0/","ocw_type":"OCWImage","resourcetype":"Image","title":"18-06cis04.jpg","uid":"e507be10-5507-5a08-2b2d-ea012b3cce5e","video_files":{"video_thumbnail_file":null},"video_metadata":{"youtube_id":null}}}
+

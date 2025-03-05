@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on MIT OpenCourseWare</title>
+    <link>/resources/projects/</link>
+    <description>Recent content in Projects on MIT OpenCourseWare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/resources/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1806ciphil.pdf</title>
+      <link>/resources/1806ciphil/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/1806ciphil/data.json</guid>
+      <description>Final student project report courtesy of Philip Brocoum.</description>
+    </item>
+    
+    <item>
+      <title>final_project_5.pdf</title>
+      <link>/resources/final_project_5/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/final_project_5/data.json</guid>
+      <description>Final student project report courtesy of Thomas Covert.</description>
+    </item>
+    
+    <item>
+      <title>finalproject_2.pdf</title>
+      <link>/resources/finalproject_2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/finalproject_2/data.json</guid>
+      <description>Final student project report courtesy of Matthew Herman.</description>
+    </item>
+    
+    <item>
+      <title>jsv_final_project_3.pdf</title>
+      <link>/resources/jsv_final_project_3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/jsv_final_project_3/data.json</guid>
+      <description>Final student project report courtesy of Juha Valkama.</description>
+    </item>
+    
+    <item>
+      <title>paper4.pdf</title>
+      <link>/resources/paper4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/paper4/data.json</guid>
+      <description>Final student project report courtesy of Eric Broder.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/pages/projects/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/projects/data.json</guid>
+      <description>Below are the project assignments in three formats (.tex, .ps, and .pdf). Sample student projects are included courtesy of the students listed. The projects are due during the week noted in the table.
+WEEK # PROJECT ASSIGNMENTS SAMPLE PROJECTS 8 Project 1: Reflections in a Euclidean Space (TEX) (PS) (PDF) Project 1 by Philip Brocoum (PDF) (Courtesy of Philip Brocoum. Used with permission.) 9 Project 2: Abstract Root Systems (TEX) (PS) (PDF) Project 2 by Matthew Herman (PDF) (Courtesy of Matthew Herman.</description>
+    </item>
+    
+    <item>
+      <title>rs1.pdf</title>
+      <link>/resources/rs1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs1/data.json</guid>
+      <description>Project instructions and guidelines.</description>
+    </item>
+    
+    <item>
+      <title>rs1.ps</title>
+      <link>/resources/rs1-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs1-1/data.json</guid>
+      <description>Project information in PS format.</description>
+    </item>
+    
+    <item>
+      <title>rs1.tex</title>
+      <link>/resources/rs1-12/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs1-12/data.json</guid>
+      <description>Project information in TEX format.</description>
+    </item>
+    
+    <item>
+      <title>rs2.pdf</title>
+      <link>/resources/rs2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs2/data.json</guid>
+      <description>Project guidelines and instructions.</description>
+    </item>
+    
+    <item>
+      <title>rs2.ps</title>
+      <link>/resources/rs2-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs2-1/data.json</guid>
+      <description>Project information in PS format.</description>
+    </item>
+    
+    <item>
+      <title>rs2.tex</title>
+      <link>/resources/rs2-12/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs2-12/data.json</guid>
+      <description>Project information in TEX format.</description>
+    </item>
+    
+    <item>
+      <title>rs3.pdf</title>
+      <link>/resources/rs3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs3/data.json</guid>
+      <description>Project guidelines and instructions.</description>
+    </item>
+    
+    <item>
+      <title>rs3.ps</title>
+      <link>/resources/rs3-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs3-1/data.json</guid>
+      <description>Project information in PS format.</description>
+    </item>
+    
+    <item>
+      <title>rs3.tex</title>
+      <link>/resources/rs32/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs32/data.json</guid>
+      <description>Project information in TEX format.</description>
+    </item>
+    
+    <item>
+      <title>rs4.pdf</title>
+      <link>/resources/rs4-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs4-1/data.json</guid>
+      <description>Project guidelines and instructions.</description>
+    </item>
+    
+    <item>
+      <title>rs4.ps</title>
+      <link>/resources/rs4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs4/data.json</guid>
+      <description>Project information in PS format.</description>
+    </item>
+    
+    <item>
+      <title>rs4.tex</title>
+      <link>/resources/rs42/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs42/data.json</guid>
+      <description>Project information in TEX format.</description>
+    </item>
+    
+    <item>
+      <title>rs5.pdf</title>
+      <link>/resources/rs5/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs5/data.json</guid>
+      <description>Project guidelines and instructions.</description>
+    </item>
+    
+    <item>
+      <title>rs5.ps</title>
+      <link>/resources/rs5-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs5-1/data.json</guid>
+      <description>Project information in PS format.</description>
+    </item>
+    
+    <item>
+      <title>rs5.tex</title>
+      <link>/resources/rs5-12/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs5-12/data.json</guid>
+      <description>Project information in TEX format.</description>
+    </item>
+    
+    <item>
+      <title>rs6.pdf</title>
+      <link>/resources/rs6/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs6/data.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rs6.ps</title>
+      <link>/resources/rs6-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs6-1/data.json</guid>
+      <description>Supporting PS file for Project Assignment 6</description>
+    </item>
+    
+    <item>
+      <title>rs6.tex</title>
+      <link>/resources/rs62/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs62/data.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rs61.pdf</title>
+      <link>/resources/rs61/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs61/data.json</guid>
+      <description>Project guidelines and instructions.</description>
+    </item>
+    
+    <item>
+      <title>rs61.ps</title>
+      <link>/resources/rs61-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs61-1/data.json</guid>
+      <description>Project information in PS format.</description>
+    </item>
+    
+    <item>
+      <title>rs61.tex</title>
+      <link>/resources/rs61-2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/rs61-2/data.json</guid>
+      <description>Project information in TEX format.</description>
+    </item>
+    
+  </channel>
+</rss>
