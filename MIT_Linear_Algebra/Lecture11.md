@@ -1,4 +1,3 @@
-
 ## 11. Matrix Spaces
 $M$ = all 3 by 3 matrices,**dimension** = 9
 subspace of $M$:
@@ -347,3 +346,95 @@ A^TA\hat{x} = A^Tb
 $$
 $N(A^TA)$= N(A),rank of A = rank of $A^TA$
 $A^TA$ is invertible, only if A is full rank
+
+
+## 15. Projections
+![alt text]({290495AA-8365-4DF3-9F50-5708B093F933}.png)
+- $a^T(b-xa)=0$
+$$
+ x =\frac{a^Tb}{a^Ta}$$
+$$
+ P = a\frac{a^Tb}{a^Ta}
+$$
+- P is a projection matrix， n by n
+$$
+ Projection Matrix = a\frac{a^T}{a^Ta}
+$$
+- the column space of P is a line through a,rank = 1
+    - P is symmetric, $P^T = P$  
+    - $P^2 = P$
+### Q:Why project?
+Because Ax=b may have not solution , so solve the **closest** solution.
+Ax always in the column space of A, but b may not .
+So solve Ax = P, P is the projection of b in the column space of A
+best possible solution of Ax=b is $\hat{x}$
+![alt text]({6DFEA167-E233-4FF0-9CEE-6FBB38DD8AEB}.png)
+1. WHAT IS THE PLANE?
+$a_1 ,a_2$ are the basis of the plane，they are not to be orthogonal,but independent
+2. How to project b to the plane?How to find the projection matrix?
+It must be 
+$$
+\begin{bmatrix}
+a_1 & a_2 \\
+\end{bmatrix}
+$$
+so 
+$$
+P = \hat{x_1}a_1 + \hat{x_2}a_2 = A\hat{x}
+$$
+Key: $e = b-A\hat{x}$ is orthogonal to the plane
+so 
+$$
+a_1^Te = 0,a_2^Te = 0
+$$
+$$
+\begin{bmatrix}
+a_1^T \\
+a_2^T \\
+\end{bmatrix}(b-A\hat{x}) =
+\begin{bmatrix}
+0 \\
+0 \\
+\end{bmatrix},
+A^T(b-A\hat{x}) = 0
+$$
+so e in N($A^T$),so e $\perp$ C(A)
+
+SO:
+1. $\hat{x} = (A^TA)^{-1}A^Tb$
+2. $P = A\hat{x}   =  A(A^TA)^{-1}A^Tb$
+3. matrix $P = A(A^TA)^{-1}A^T$
+> Check: $P^2 = P$
+> $P^2 = A(A^TA)^{-1}A^TA(A^TA)^{-1}A^T = A(A^TA)^{-1}A^T = P$
+
+### Application:
+![alt text]({BAF864BC-AB20-4D2B-A619-AC4DB5EA329F}.png)
+FIT some points to a line
+- C+D=1
+C+2D=2
+C+3D=2
+matrix : Ax=b
+$$
+A =
+\begin{bmatrix}
+1 & 1 \\
+1 & 2 \\
+1 & 3 \\
+\end{bmatrix},x=
+\begin{bmatrix}
+C \\
+D \\
+\end{bmatrix},b=
+\begin{bmatrix}
+1 \\
+2 \\
+2 \\
+\end{bmatrix}
+$$
+
+## 16. Projections, Least Squares
+$$
+P = A(A^TA)^{-1}A^T
+$$
+IF b is in the column space of A, then $Pb=b$
+IF b is $\perp$ the column space of A,$ Pb = 0$
