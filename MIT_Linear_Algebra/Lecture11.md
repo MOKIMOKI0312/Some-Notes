@@ -407,7 +407,8 @@ SO:
 > Check: $P^2 = P$
 > $P^2 = A(A^TA)^{-1}A^TA(A^TA)^{-1}A^T = A(A^TA)^{-1}A^T = P$
 
-### Application:
+### 15.2 Application:
+<a id="my-anchor"></a>习题
 ![alt text]({BAF864BC-AB20-4D2B-A619-AC4DB5EA329F}.png)
 FIT some points to a line
 - C+D=1
@@ -438,3 +439,164 @@ P = A(A^TA)^{-1}A^T
 $$
 IF b is in the column space of A, then $Pb=b$
 IF b is $\perp$ the column space of A,$ Pb = 0$
+![alt text]({6CC8B0B8-012F-497C-AFB5-C0CA7AD6D5CA}.png)
+
+[tap here](#my-anchor)
+goal: minimize $||b-A\hat{x}||^2= ||e||^2
+= e_1^2 + e_2^2 + e_3^2$
+
+$$
+e = b-A\hat{x} = b-Pb = (I-P)b
+$$
+1. find 
+$$
+\hat{x} = 
+\begin{bmatrix}
+\hat{C} \\
+\hat{D} \\
+\end{bmatrix},P
+$$
+$$
+A^TA\hat{x}= A^Tb
+$$
+$$
+A^TA =
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & 2 & 3 \\
+\end{bmatrix}
+\begin{bmatrix}
+1 & 1 \\
+1 & 2 \\
+1 & 3 \\
+\end{bmatrix}
+= 
+\begin{bmatrix}
+3 & 6 \\
+6 & 14 \\
+\end{bmatrix}
+$$
+$$
+3C + 6D = 5,
+6C + 14D = 11
+$$
+get the **nomal equation**
+$$
+D= \frac{1}{2},C = \frac{2}{3}
+$$
+the line:
+$$
+y = \frac{2}{3} + \frac{1}{2}t
+$$
+so 
+$$
+e_1 = -\frac{1}{6},e_2 = \frac{2}{6},e_3 = -\frac{1}{6}
+$$
+final answer:
+$$
+A^TA\hat{x} = A^Tb,
+P = A\hat{x}
+$$
+
+### pROVE: 
+If a has indepedent calumns, then $A^TA$ is invertible
+1. a matrix is invertible if and only if 
+its nullspace is {0}
+so :
+$$
+A^TAx = 0
+$$
+IDEA: $A^TAx = 0$ means $x^TA^TAx = 0$,means
+$$
+(Ax)^T(Ax) = 0 \Longrightarrow Ax = 0
+$$
+and A has independent columns ,so x = 0
+    - Proved
+
+## 17. Orthogonal basis and matrix, Gram-Schmidt
+- basis: $q_1,q_2,q_3$ are orthogonal
+so : 
+$$
+q_i^Tq_j = \begin{cases}
+1 & i=j \\
+0 & i \neq j \\
+\end{cases}
+$$
+$$
+Q = 
+\begin{bmatrix}
+q_1 & q_2 & q_3 &...& q_n\\
+\end{bmatrix}
+$$
+$$
+Q^TQ = 
+\begin{bmatrix}
+q_1^T \\
+q_2^T \\
+q_3^T \\
+... \\
+q_n^T \\
+\end{bmatrix}
+\begin{bmatrix}
+q_1 & q_2 & q_3 &...& q_n\\
+\end{bmatrix}
+= I
+$$
+Q is **orthogonal matrix**
+If Q is square, then $Q^TQ$ = I, tells us $Q^T = Q^{-1}$
+
+EXAMPLE:
+1. 
+$$
+perms Q = 
+\begin{bmatrix}
+0&0&1 \\
+1&0&0 \\
+0&1&0 \\
+\end{bmatrix},
+Q^T = 
+\begin{bmatrix}
+0&1&0 \\
+0&0&1 \\
+1&0&0 \\
+\end{bmatrix}
+$$
+$$
+Q^TQ = I
+$$
+2.
+$$
+Q =\frac{1}{2}
+\begin{bmatrix}
+1&1&1&1 \\
+1&-1&1&-1 \\
+1&1&-1&-1 \\
+1&-1&-1&1 \\
+\end{bmatrix}
+$$
+
+Advantage of orthogonal matrix:
+1. if Q has orthogonal columns, projects onto its columns space 
+$P = 
+P = Q(Q^TQ)^{-1}Q^T = QQ^T=I$if Q is square
+2. $(QQ^T)(QQ^T) = QQ^T$
+3. $A^TA\hat{x} = A^Tb$,now A is Q
+  so $Q^TQ\hat{x} = Q^Tb$
+  so $\hat{x} = Q^Tb$
+  so $\hat{x_i}= $
+  $$
+  q_i^Tb
+  $$
+### Gram-Schmidt
+- independent vectors a,b;$\rightarrow$ orthogonal vectors A,B;then $\rightarrow$ orthogonal basis
+1. choose A = a
+2. $$
+B =b- \frac{A^Tb}{A^TA}A
+$$
+3. $q_1 = \frac{A}{||A||},q_2 = \frac{B}{||B||}$
+
+- a,b,c are independent vectors
+1. as a,b find $q_1,q_2$
+2. $$
+C = c - \frac{A^Tc}{A^TA}A - \frac{B^Tc}{B^TB}B
+$$
