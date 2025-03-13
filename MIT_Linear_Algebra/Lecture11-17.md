@@ -600,3 +600,9 @@ $$
 2. $$
 C = c - \frac{A^Tc}{A^TA}A - \frac{B^Tc}{B^TB}B
 $$
+3. $q_3$ = $\frac{C}{||C||}$
+  
+$$
+A = QR
+$$
+> 这鸟人在说什么
