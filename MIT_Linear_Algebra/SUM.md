@@ -1365,5 +1365,937 @@ A - 1I =
 $$
 it needs to be singular, so we can calculate the det, another way is to add up the rows, it should be **zero**
 prove the second part:
-because $(1,1,1)$ is in the n(A^T)  
+because $(1,1,1)$ is in the n(A^T)
+
+## 2.25 Review
+$$a = 
+\begin{bmatrix}
+2 \\
+1 \\
+2 
+\end{bmatrix}
+$$
+$$
+P = \frac{aa^T}{a^Ta}=\frac{1}{9}
+\begin{bmatrix}
+2 \\
+1 \\
+2
+\end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 2
+\end{bmatrix} = \frac{1}{9}
+\begin{bmatrix}
+4 & 2 & 4 \\
+2 & 1 & 2 \\
+4 & 2 & 4
+\end{bmatrix}
+$$
+$$
+Pa = a 
+$$
+
+$$
+u_{k+1} = Pu_k, u_0 =
+\begin{bmatrix}
+9 \\
+9 \\
+0
+\end{bmatrix}
+$$
+SO
+$$
+u_1 = Pu_0 = a\frac{a^Tu_0}{a^Ta} = 3a
+$$
+
+2. Fitting a line to data points
+t=1,y = 4
+t=2,y = 5
+t=3,y = 8
+$y = Dt$
+$$
+\begin{bmatrix}
+1 \\
+2 \\
+3
+\end{bmatrix}D=
+\begin{bmatrix}
+4 \\
+5 \\
+8
+\end{bmatrix}
+$$
+It is Ax = b, find best D by projecting b onto the column space of A.
+
+2.2 Two vectors   
+$$
+a_1 = 
+\begin{bmatrix}
+1 \\
+2 \\
+3
+\end{bmatrix}, a_2 =
+\begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}
+$$
+
+3. 4 by 4 $\lambda_1,\lambda_2,\lambda_3,\lambda_4$
+- Invertible condition? None of the $\lambda$ is zero
+- det of $A^{-1}$? $\frac{1}{\lambda_1\lambda_2\lambda_3\lambda_4}$
+- trace of $A^{-1}$? $\frac{1}{\lambda_1}+\frac{1}{\lambda_2}+\frac{1}{\lambda_3}+\frac{1}{\lambda_4}$
+
+4.    
+$$
+A_4 =
+\begin{bmatrix}
+1 & 1 & 0 & 0 \\
+1 & 1 & 1 & 0 \\
+0 & 1 & 1 & 1 \\
+0 & 0 & 1 & 1
+\end{bmatrix}
+$$
+$D_n = det(A_n)$
+Use cofactors:
+$$
+D_n = D_{n-1} - D_{n-2}
+$$
+$$
+\begin{bmatrix}
+D_n \\
+D_{n-1}
+\end{bmatrix} =
+\begin{bmatrix}
+1 & -1 \\
+1 & 0
+\end{bmatrix}
+\begin{bmatrix}
+D_{n-1} \\
+D_{n-2}
+\end{bmatrix}
+$$
+$$
+\begin{bmatrix}
+1-\lambda & 1 \\
+-1 & 0-\lambda
+\end{bmatrix}= \lambda^2-\lambda-1 = 0
+$$
+$$
+\lambda = \frac{1\pm\sqrt{-3}}{2}= e^{\pm i\pi/3}
+$$
+So it does not blow up or go to zero, it oscillates.
+
+## 26. Symmetric Matrices
+Special properties:
+1. Eigenvalues are **real**
+2. Eigenvectors are **orthogonal**/**perpendicular**
+
+Usual case of A:
+$$
+A = S \Lambda S^{-1}
+$$
+where $S$ is eigenvector matrix, and $\Lambda$ is diagonal matrix.
+
+Symmetric matrix:
+$$
+A = Q \Lambda Q^T
+$$
+where $Q$ is orthogonal matrix, and $\Lambda$ is diagonal matrix.
+> Spectral theorem: every symmetric matrix can be diagonalized by an orthogonal matrix.
+
+Q: Why REAL eigenvalues?
+$$ 
+A x = \lambda x \text{ always}\rightarrow \bar{A} \bar{x} = \bar{\lambda} \bar{x}\rightarrow \bar{x^T}\bar{A^T} = \bar{\lambda} \bar{x^T} 
+$$
+> $\overline{a+ib} = a-ib$
+
+If A is symmetric, then $A^T = A$
+
+PROOF:
+$$
+\bar{x^T} A x= \lambda \bar{x^T} x \rightarrow , \bar{x^T}Ax= \bar{x^T}\bar{\lambda}x
+$$
+SO
+$$
+\lambda \bar{x^T} x = \bar{\lambda}\bar{x^T}x
+$$
+$$
+\lambda = \bar{\lambda}
+$$
+> $\lambda$ is real
+
+$$
+x^T x \star
+$$
+$$=
+\begin{bmatrix}
+\bar{x_1} & \bar{x_2} & \cdots & \bar{x_n}\\
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_n
+\end{bmatrix} = 
+\bar{x_1}x_1 + \bar{x_2}x_2 + \cdots + \bar{x_n}x_n 
+$$
+$$=
+(a+ib)(a-ib) \cdots = a^2 + b^2 
+$$
+> All positive, so it is real, equal to the length of x
+
+Good matrices: Real $\lambda$, perpendicular x's
+- Normal matrices: means $AA^T = A^TA$
+- Symmetric matrices: means $A = A^T$
+
+$$
+A = Q \Lambda Q^T =
+\begin{bmatrix}
+q_1 & q_2 & \cdots & q_n
+\end{bmatrix}
+\begin{bmatrix}
+\lambda_1 & 0 & \cdots & 0 \\
+0 & \lambda_2 & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & \lambda_n
+\end{bmatrix}
+\begin{bmatrix}
+q_1^T \\
+q_2^T \\
+\vdots \\
+q_n^T
+\end{bmatrix}= 
+\lambda_1 q_1 q_1^T + \lambda_2 q_2 q_2^T + \cdots + \lambda_n q_n q_n^T
+$$
+
+$$
+aa^T :\text{ Projection matrix}
+$$
+So every symmetric matrix is a combination of perpendicular projection matrices.
+- Signs of pivots same as signs of $\lambda$'s, the number of pivots = number of positive $\lambda$'s
+
+### Positive Definite Matrix
+- What is positive definite matrix?
+    - All are symmetric 
+    - All eigenvalues are positive
+    - All pivots are positive
+
+Example:
+$$
+\begin{bmatrix}
+5 & 2 \\
+2 & 3 
+\end{bmatrix}
+$$
+1. First pivot is 5, second pivot is $\frac{11}{5}$, so it is positive definite (product of pivots = determinant = 13)
+2. Eigenvalues are $4 \pm \sqrt{5}$
+
+Example 2:
+$$
+\begin{bmatrix}
+-1 & 0 \\
+0 & -3
+\end{bmatrix}
+$$
+Det = 3 > 0, but it's not positive definite because eigenvalues are negative.
+
+## 27. Complex Matrices and Fast Fourier Transform
+
+### Length
+$$
+z = 
+\begin{bmatrix}
+z_1 \\
+z_2 \\
+\vdots \\
+z_n
+\end{bmatrix}
+$$
+It is in $C^n$, means n-dimensional complex space, instead of $R^n$
+$Z^T Z$ is not good, because if $z_1 = i$, then $z_1^2 = -1$, so it is not real.
+So we use $\overline{z_1}z_1 = |z_1|^2$
+
+$$
+\overline{z}^T z = 
+\begin{bmatrix}
+1 & -i
+\end{bmatrix}
+\begin{bmatrix}
+1 \\
+i
+\end{bmatrix} = 1 + 1 = 2
+$$
+is real, and it is the length of z.
+$$
+z^H 
+$$
+> Hermitian transpose(no sound for "h")
+
+Linear product:
+$$
+\overline{y}^T x = y^H x
+$$
+
+Symmetric matrix:
+- Normal(real) matrix: $A = A^T$
+- Hermitian matrix: $A = \bar{A}^H$
+$$
+A = 
+\begin{bmatrix}
+2 & 3+i \\
+3-i & 5
+\end{bmatrix}
+$$
+
+Perpendicular:
+$$
+q_1, q_2, \cdots, q_n
+$$
+$$
+\bar{q_i}^T q_j = 
+\begin{cases}
+1 & i = j \\
+0 & i \neq j
+\end{cases}
+$$
+$$
+Q = \begin{bmatrix}
+q_1 & q_2 & \cdots & q_n
+\end{bmatrix}, Q^T Q = I = Q^H Q(\text{Complex space})
+$$
+
+#### Orthogonal Matrix > Unitary Matrix
+- Unitary matrix: 
+  - Orthogonal matrix in complex space
+
+### Fourier Matrix
+$$
+F_n = 
+\begin{bmatrix}
+1 & 1 & 1 & \cdots & 1 \\
+1 & w & w^2 & \cdots & w^{n-1} \\
+1 & w^2 & w^4 & \cdots & w^{2(n-1)} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & w^{n-1} & w^{2(n-1)} & \cdots & w^{(n-1)(n-1)}
+\end{bmatrix}
+$$
+where $w = e^{2\pi i/n}= \cos(2\pi/n) + i \sin(2\pi/n)$
+
+> First column is **0** column, last column is **n-1** column
+
+$$
+F_4 = \frac{1}{2}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+1 & i & i^2 & i^3 \\
+1 & i^2 & i^4 & i^6 \\
+1 & i^3 & i^6 & i^9
+\end{bmatrix} = \frac{1}{2}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+1 & i & -1 & -i \\
+1 & -1 & 1 & -1 \\
+1 & -i & -1 & i
+\end{bmatrix}
+$$
+- Inner product of columns 2 and 4 = 0
+$$ 
+F_4^H F_4 = I
+$$
+
+## 28. Similar Matrices and Jordan Form
+- Positive definite matrix: 
+$$
+x^T A x \text{ always}> 0
+$$
+> Except x = 0
+
+If A, B are positive definite, then $x^T (A+B)x$ is positive definite.
+
+#### Similar Matrices
+$A$ m by n
+$$
+A^T A 
+$$
+Is square, symmetric and positive definite
+- Proof: We need to prove $x^T A^T A x > 0$
+$$
+x^T A^T A x = (Ax)^T Ax = ||Ax||^2 \geq 0
+$$ 
+
+(n by n) A and B are similar if: FOR SOME invertible M
+$$
+B = M^{-1} A M
+$$
+
+Example:
+If A has eigenvectors $S$
+$$
+S^{-1} A S = \Lambda
+$$
+Now A is similar to $\Lambda$
+$$
+A = 
+\begin{bmatrix}
+2 & 1 \\
+1 & 2
+\end{bmatrix}, \Lambda =
+\begin{bmatrix}
+3 & 0 \\
+0 & 1
+\end{bmatrix}
+$$
+
+- Main fact: A and $\Lambda$ have the same **eigenvalues**
+
+#### Similar Matrices Have the Same Eigenvalues
+And have some M to connect them
+
+$$
+Ax = \lambda x \rightarrow M^{-1} A M M^{-1} x = \lambda M^{-1} x \rightarrow B(M^{-1} x) = \lambda (M^{-1} x)
+$$
+> But the eigenvectors are different
+
+#### For Bad Cases (λ₁ = λ₂)
+If $\lambda_1 = \lambda_2 = 4$, then eigenvectors are not independent
+
+One family has 
+$$
+\begin{bmatrix}
+4 & 0 \\
+0 & 4
+\end{bmatrix}\text{ only similar to itself}
+$$
+$$
+M^{-1} 
+\begin{bmatrix}
+4 & 0 \\
+0 & 4
+\end{bmatrix}
+M =
+\begin{bmatrix}
+4 & 0 \\
+0 & 4
+\end{bmatrix}
+$$
+
+Another big family has
+$$
+\begin{bmatrix}
+4 & 1 \\
+0 & 4
+\end{bmatrix}
+$$
+It is the **Jordan form** of A
+More members in the family
+$$
+\begin{bmatrix}
+4 & 1 \\
+0 & 4
+\end{bmatrix},
+\begin{bmatrix}
+5 & 1 \\
+-1 & 3
+\end{bmatrix},
+\begin{bmatrix}
+4 & 0 \\    
+17 & 4
+\end{bmatrix}
+$$
+- Trace = 8, Det = 16
+- Only have one eigenvector
+
+#### Jordan Block
+$$
+J_i =
+\begin{bmatrix}
+\lambda_i & 1 & 0 & 0 \\
+0 & \lambda_i & 1 & 0 \\
+0 & 0 & \lambda_i & 1 \\
+0 & 0 & 0 & \lambda_i
+\end{bmatrix}
+$$
+- Zeros below, ones above diagonal
+- Only have one eigenvector
+
+#### Every Matrix is Similar to a Jordan Matrix $J$
+$$
+J = 
+\begin{bmatrix}
+J_1 & 0 & 0 \\
+0 & J_2 & 0 \\
+0 & 0 & J_3
+\end{bmatrix}
+$$
+- The number of Jordan blocks is the number of independent eigenvectors
+
+## 29. Singular Value Decomposition (SVD)
+$$
+A = U \Sigma V^T
+$$
+- A is any matrix
+- U and V are orthogonal
+> A photo: U is the camera, V is the projector
+> $\sigma_1 u_1 = A v_1$
+
+$$
+A 
+\begin{bmatrix}
+v_1 & v_2 & v_3 & \cdots &v_m \\
+\end{bmatrix} =
+\begin{bmatrix}
+u_1 & u_2 & u_3 & \cdots &u_n \\
+\end{bmatrix}
+\begin{bmatrix}
+\sigma_1 & 0 & 0 & \cdots &0 \\
+0 & \sigma_2 & 0 & \cdots &0 \\
+0 & 0 & \sigma_3 & \cdots &0 \\
+\end{bmatrix}
+$$
+> $\sigma$ and $v$ are the basis vectors
+
+A times the first basis vector should be $\sigma$ times another basis vector
+- v is the basis of the row space
+- u is the basis of the column space
+
+Express as matrices:
+$$
+A V = U \Sigma
+$$
+
+Example:
+$$
+A = 
+\begin{bmatrix}
+4 & 4 \\
+-3 & 3
+\end{bmatrix}
+$$
+- $v_1, v_2$ in row space $R^2$
+- $u_1, u_2$ in column space $R^2$
+- Both are orthogonal
+- $\sigma_1, $\sigma_2$ > 0
+
+So we hope:
+- $A v_1 = \sigma_1 u_1$
+- $A v_2 = \sigma_2 u_2$
+
+$$
+A = U \Sigma V^{-1} = U \Sigma V^T
+$$
+SO 
+$$
+A^T A = V \Sigma^T U^T U \Sigma V^T = V \Sigma^T \Sigma V^T
+$$
+- $U^T U = I$
+$$
+= V 
+\begin{bmatrix}
+\sigma_1^2 & 0 \\
+0 & \sigma_2^2
+\end{bmatrix}
+V^T
+$$
+- V contains the eigenvectors of $A^T A$
+- $A^T A$ is symmetric and positive definite
+
+#### How to Find SVD
+1. Compute $A^T A$
+2. Find eigenvalues and eigenvectors of $A^T A$
+3. The columns of V are the eigenvectors
+4. The singular values are the square roots of the eigenvalues of $A^T A$
+5. Compute U from $U = \frac{1}{\sigma_i}Av_i$
+
+#### Conclusion
+1. $v_1 ... v_r$ are the basis of the row space
+2. $u_1 ... u_r$ are the basis of the column space
+3. $v_{r+1} ... v_m$ are the basis of the nullspace
+4. $u_{r+1} ... u_n$ are the basis of the nullspace of $A^T$
+
+## Positive Definite Matrices and Minima
+Example:
+$$
+A =
+\begin{bmatrix}
+a & b \\
+b & c
+\end{bmatrix}
+$$
+Conditions for positive definiteness:
+1. $\lambda_1 > 0, \lambda_2 > 0$
+2. $a > 0, ac-b^2 > 0$
+3. Pivot = $a > 0$, second pivot = $\frac{ac-b^2}{a} > 0$
+4. $x^T A x > 0$ for all non-zero x
+
+Example 2:
+$$
+A =
+\begin{bmatrix}
+2 & 6 \\
+6 & 18
+\end{bmatrix}
+$$
+- Not positive definite, because $det = 0$, it is positive semi-definite
+- It is singular
+
+Example 3:
+$$ 
+\begin{bmatrix}
+x_1 & x_2
+\end{bmatrix}
+\begin{bmatrix}
+2 & 6 \\
+6 & 18
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix} = 2x_1^2 + 12x_1x_2 + 18x_2^2
+$$
+$$ 
+= ax^2 + 2bxy + cy^2
+$$
+It is a quadratic form. Is it always positive?
+For this example, we can rewrite:
+$$
+2x_1^2 + 12x_1x_2 + 18x_2^2 = 2(x_1 + 3x_2)^2
+$$
+So it is positive semi-definite.
+
+If we change 18 to 20, the form becomes:
+$$
+f(x,y) = 2x^2 + 12xy + 20y^2
+$$
+$$
+= 2(x+3y)^2 + 2y^2
+$$
+So it is positive definite.
+
+## 30. Linear Transformations
+- $T: R^2 \rightarrow R^2$
+  - Like a function, an input and an output
+- $T(v+w) = T(v) + T(w)$
+- $T(cv) = c T(v)$
+- $T(cv+dw) = c T(v) + d T(w)$
+  - Shifting in plane is not linear transformation
+
+Understanding linear transformation: Find T matrix
+
+First:
+Start:
+$T$: $R^3$ -> $R^2$
+Example:
+$$
+T(v) = Av 
+$$
+   - v: input vector in $R^3$
+   - T(v): output vector in $R^2$
+   - A: matrix of T, 2 by 3 matrix
+
+If $v_1$ and $v_2$ are not dependent, finding $T(v_1)$ and $T(v_2)$ means we know the output of T
+because every v is a linear combination of $v_1$ and $v_2$
+$$
+v = 
+\begin{bmatrix}
+3 \\ 2 \\ 4
+\end{bmatrix} = 3 
+\begin{bmatrix}
+1 \\ 0 \\ 0
+\end{bmatrix} + 2
+\begin{bmatrix}
+0 \\ 1 \\ 0
+\end{bmatrix} + 4
+\begin{bmatrix}
+0 \\ 0 \\ 1
+\end{bmatrix}
+$$
+
+$T$: $R^n$ -> $R^m$
+Choose basis $v_1, v_2, ... v_n$ of $R^n$
+$w_1, w_2, ... w_m$ of $R^m$
+
+$v_1, v_2$ are the basis of input and output space
+
+$v = c_1 v_1 + c_2 v_2$
+
+$$
+T(v) = c_1 v_1
+$$
+
+Find c: 
+$(c_1, c_2) \rightarrow (c_1, 0)$
+
+$$
+\begin{bmatrix}
+1 & 0 \\
+0 & 0
+\end{bmatrix}
+\begin{bmatrix}
+c_1 \\
+c_2
+\end{bmatrix}=
+\begin{bmatrix}
+c_1 \\
+0 
+\end{bmatrix}
+$$
+$$
+A * \text{input coords} = \text{output coords}
+$$
+
+### Rule to Find A
+> Given basis of input v and output w
+1. First column of A 
+    - Write $T(v_1)=a_{11}w_1+a_{21}w_2 ... $ 
+2. Second column of A 
+    - Write $T(v_2)=a_{12}w_1+a_{22}w_2 ... $
+$$
+A\begin{bmatrix}
+\text{input coords} 
+\end{bmatrix} = \begin{bmatrix}
+\text{output coords}    
+\end{bmatrix}
+$$
+
+### Linear Transformation to Take Derivative
+Input: $c_1+c_2x+c_3x^2$
+Input basis: $1, x, x^2$
+
+Output: $c_2+2c_3x$
+Output basis: $1, x$
+So
+$$
+\begin{bmatrix}
+0 & 1 & 0 \\
+0 & 0 & 2 \\
+0 & 0 & 0
+\end{bmatrix} 
+\begin{bmatrix}
+c_1 \\ c_2 \\ c_3
+\end{bmatrix} =
+\begin{bmatrix}
+c_2 \\ 2c_3 \\ 0
+\end{bmatrix}
+$$
+
+## 31. Change of Basis, Compression of Images
+- Image compression:
+Fourier basis
+
+#### Change of Basis:
+Columns of W = new basis vectors 
+$$
+\begin{bmatrix}
+x 
+\end{bmatrix}_{old basis} = W
+\begin{bmatrix}
+c 
+\end{bmatrix}_{new basis}
+$$
+$$
+x = Wc
+$$
+T with respect to $v_1, v_2, ... v_n$, it has matrix A
+With respect to $w_1, w_2, ... w_m$, it has matrix B
+Relation between A and B?
+- They are **similar**
+> $B = M^{-1} A M$, M is the **change of basis matrix**
+
+What is A?
+Using the basis of $v_1, v_2, ... v_8$ to express the output
+Know T completely from $T(v_1), T(v_2), ... T(v_8)$
+Then $T(x) = c_1T(v_1)+c_2T(v_2)...$ 
+
+Write $T(v_1) = a_{11}v_1 + a_{21}v_2 + ... + a_{81}v_8$
+$T(v_2) = a_{12}v_1 + a_{22}v_2 + ... + a_{82}v_8$
+SO
+$$
+[A] = \begin{bmatrix}
+a_{11} & a_{12} & ... & a_{18} \\
+a_{21} & a_{22} & ... & a_{28} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{81} & a_{82} & ... & a_{88}
+\end{bmatrix}
+$$
+
+Eigenvector basis:
+$$
+T(v_i)= \lambda_i v_i
+$$
+What is A?
+$$
+A = \begin{bmatrix}
+\lambda_1 & 0 & ... & 0 \\
+0 & \lambda_2 & ... & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & ... & \lambda_n
+\end{bmatrix}
+$$
+
+## 32. Cyclic Spaces, The Minimal Polynomial
+Consider:
+$$
+v, Av, A^2v, A^3v, ...
+$$
+These vectors eventually become linearly dependent. If we have n independent vectors, we can express $A^nv$ as a linear combination of earlier vectors.
+$$
+A^nv = c_0v + c_1Av + ... + c_{n-1}A^{n-1}v
+$$
+
+This gives us:
+$$
+A^n - c_{n-1}A^{n-1} - ... - c_1A - c_0I = 0
+$$
+
+This is a matrix equation that A satisfies. The polynomial:
+$$
+p(x) = x^n - c_{n-1}x^{n-1} - ... - c_1x - c_0
+$$
+is called the minimal polynomial of A. It's the polynomial of lowest degree such that p(A) = 0.
+
+The Cayley-Hamilton theorem states that every matrix satisfies its own characteristic equation:
+$$
+det(A - λI) = 0
+$$
+
+If we write out the characteristic polynomial:
+$$
+q(λ) = λ^n + b_{n-1}λ^{n-1} + ... + b_1λ + b_0
+$$
+then q(A) = 0.
+
+For example, for a 2×2 matrix:
+$$
+A = \begin{bmatrix}
+2 & 1 \\
+0 & 2
+\end{bmatrix}
+$$
+
+The characteristic polynomial is (2-λ)² = λ² - 4λ + 4, so:
+$$
+A^2 - 4A + 4I = 0
+$$
+
+But the minimal polynomial can be simpler, especially when A has repeated eigenvalues. For matrices with distinct eigenvalues, the minimal polynomial and characteristic polynomial are the same.
+
+## 33. Inverse (Left, Right, Pseudo)
+$$
+A A^{-1} = I = A^{-1} A
+$$
+When r = m = n, **full rank**
+
+#### Not Full Rank?
+- Full column rank: have a **left** inverse
+  - r = n, m > n
+> If we have full column rank, we can find a left inverse
+
+$$
+\text{nullspace}(A) = \{0\}
+$$
+0 or 1 solutions to $Ax = b$
+
+"One side inverse"
+- Left inverse:
+$$
+(A^T A)^{-1} A^T A = I
+$$
+$$
+A^{-1}_{left} A = I_{n×n}
+$$
+> A rectangular matrix can't have a two-sided inverse
+
+- Right inverse:
+Full row rank: $r = m < n$
+$$
+N(A^T)=\{0\}
+$$
+
+$$
+A A^T (A A^T)^{-1} = I
+$$
+$$
+A A^{-1}_{right} = I_{m×m}
+$$
+If A times the left inverse:
+$$
+A(A^T A)^{-1} A^T = P
+$$
+> P is the projection matrix
+
+It is a projection onto the column space of A
+
+- Pseudo inverse:
+$$
+A^+ = (A^T A)^{-1} A^T 
+$$
+
+When A is not full rank, we use the Moore-Penrose pseudo-inverse:
+$$
+A^+ = \lim_{\epsilon \rightarrow 0} (A^T A + \epsilon I)^{-1} A^T
+$$
+
+The singular value decomposition gives us a direct way to compute the pseudo-inverse:
+$$
+A = U \Sigma V^T
+$$
+$$
+A^+ = V \Sigma^{+} U^T
+$$
+
+Where $\Sigma^{+}$ is obtained by taking the reciprocal of each non-zero element in $\Sigma$ and then transposing.
+
+## 34. Fredholm Alternative
+For the equation $Ax = b$, either:
+1. There is a solution x, or
+2. There is a vector y such that $A^Ty = 0$ and $y^Tb \neq 0$
+
+These two cases are mutually exclusive - exactly one must hold.
+
+For a solution to exist, b must be in the column space of A. This means b is orthogonal to the nullspace of $A^T$.
+
+So either:
+- $Ax = b$ has a solution, or
+- There exists y in $N(A^T)$ such that $y^Tb \neq 0$
+
+This is the fundamental theorem that determines when linear systems are solvable.
+
+## Final Review
+Key concepts from the course:
+
+### Basic Operations
+- Matrix multiplication, inversion, determinants
+- Row operations and elimination
+- Rank and independence
+
+### Subspaces
+- Column space, row space, nullspace
+- Fundamental Theorem: dim(C(A)) + dim(N(A)) = n
+- Four fundamental subspaces and their dimensions
+
+### Orthogonality
+- Orthogonal vectors and subspaces
+- Projections and least squares
+- Gram-Schmidt process
+
+### Eigenvalues
+- Eigenvalues and eigenvectors
+- Diagonalization
+- Similar matrices
+- Jordan form for defective matrices
+
+### Applications
+- Linear transformations
+- Differential equations
+- Markov processes
+- Fourier analysis
+- SVD and applications
+
+### Special Matrices
+- Symmetric matrices
+- Positive definite matrices
+- Orthogonal matrices
+- Hermitian matrices
 

@@ -444,24 +444,25 @@ Steps to solve:
 2. Setup normal equations:
    $$A^TA\hat{x} = A^Tb$$
 
-3. Calculate $A^TA$:
-   $$
-   A^TA =
-   \begin{bmatrix}
-   1 & 1 & 1 \\
-   1 & 2 & 3 \\
-   \end{bmatrix}
-   \begin{bmatrix}
-   1 & 1 \\
-   1 & 2 \\
-   1 & 3 \\
-   \end{bmatrix}
-   = 
-   \begin{bmatrix}
-   3 & 6 \\
-   6 & 14 \\
-   \end{bmatrix}
-   $$
+3. Calculate 
+$A^TA$:
+$$
+A^TA =
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & 2 & 3 \\
+\end{bmatrix}
+\begin{bmatrix}
+1 & 1 \\
+1 & 2 \\
+1 & 3 \\
+\end{bmatrix}
+= 
+\begin{bmatrix}
+3 & 6 \\
+6 & 14 \\
+\end{bmatrix}
+$$
 
 4. Solve the normal equations:
    $$
@@ -873,8 +874,7 @@ x_1 & x_2 & \cdots & x_n
 \end{bmatrix}
 $$
 
-$$
-= 
+$$ = 
 \begin{bmatrix}
 x_1 & x_2 & \cdots & x_n
 \end{bmatrix}

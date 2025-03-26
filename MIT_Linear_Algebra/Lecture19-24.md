@@ -614,3 +614,39 @@ basis: $1,\cos x, \sin x, \cos 2x, \sin 2x, ...$,and they are orthogonal
 
 
 ## 2.25 Review
+$$
+\begin{bmatrix}
+2 \\
+1 \\
+2 
+\end{bmatrix}
+$$
+$$
+P = \frac{aa^T}{a^Ta}=\frac{1}{9}
+\begin{bmatrix}
+2 \\
+1 \\
+2
+\end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 2
+\end{bmatrix} = \frac{1}{9}
+\begin{bmatrix}
+4 & 2 & 4 \\
+2 & 1 & 2 \\
+4 & 2 & 4
+\end{bmatrix}
+$$
+$$
+Pa = a 
+$$
+
+2.   
+$$
+u_{k+1} = Pu_k, u_0 =
+\begin{bmatrix}
+9 \\
+9 \\
+0
+\end{bmatrix}
+$$
